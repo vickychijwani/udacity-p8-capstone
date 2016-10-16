@@ -62,6 +62,14 @@ android {
             resValue "string", "content_authority", "${defaultConfig.applicationId}.provider"
         }
     }
+    signingConfigs {
+        udacity {
+            keyAlias 'udacity'
+            keyPassword 'udacity'
+            storeFile file('../udacity.jks')
+            storePassword 'udacity'
+        }
+    }
 }
 
 repositories {
